@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicar Máscara de Texto em Imagem</title>
+    <script src="jspdf.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Markaí</h1>
+    </header>
+    <div class="container">
+        Selecione o print da NA
+        <input type="file" id="photoInput" accept="image/*">
+        Selecione o print da NP
+        <input type="file" id="photoInput2" accept="image/*">
+        <div class="preview-container">
+            <div class="preview" id="preview1">
+                <canvas id="resultCanvas" style="display: none;"></canvas>
+                <button id="downloadButton1" style="display: none">Baixar Imagem 1 em PDF</button>
+            </div>
+            <div class="preview" id="preview2">
+                <canvas id="resultCanvas2" style="display: none;"></canvas>
+                <button id="downloadButton2" style="display: none">Baixar Imagem 2 em PDF</button>
+            </div>
+        </div>
+        <button id="resetButton">Nova Marcação</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

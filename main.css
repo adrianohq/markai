@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #000;
+    color: yellow;
+    align-items: center;
+    height: 7em;
+    padding-top: 1em;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: 'Lobster', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.preview-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.preview {
+    width: 45%;
+    margin: 10px;
+    text-align: left;
+}
+
+#resultCanvas {
+    width: auto;  /* Defina a largura desejada */
+    height: 500px; 
+    margin-right: 5%;/* Defina a altura desejada */
+}
+
+#resultCanvas2 {
+    width: auto;  /* Defina a largura desejada */
+    height: 500px; /* Defina a altura desejada */
+}
+
+
+button {
+    display: block;
+    margin: 10px auto;
+}
+
+@media (max-width: 800px) {
+    .preview {
+        width: 100%;
+    }
+}
