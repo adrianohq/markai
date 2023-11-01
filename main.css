@@ -8,6 +8,9 @@
 body {
     text-align: center;
     background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -27,7 +30,7 @@ h1 {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    
+    flex: 1;
 }
 
 input[type="file"] {
@@ -64,6 +67,13 @@ input[type="file"] {
 button {
     display: block;
     margin: 10px auto;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
 }
 
 @media (max-width: 800px) {
